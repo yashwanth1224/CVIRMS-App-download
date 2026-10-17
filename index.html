@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download App</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px 20px; }
+        body { font-family: sans-serif; text-align: center; padding: 30px 20px; background-color: #f9f9f9; color: #333; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .btn { display: inline-block; padding: 15px 40px; background: #2ea44f;
-               color: white; text-decoration: none; border-radius: 6px; font-size: 18px; }
-        .note { margin-top: 30px; color: #666; font-size: 14px; line-height: 1.6; }
+               color: white; text-decoration: none; border-radius: 6px; font-size: 18px; font-weight: bold; margin: 20px 0; }
+        .btn:active { background: #2c974b; }
+        .guide-box { text-align: left; margin-top: 30px; padding: 20px; background: #fff8e1; border-left: 5px solid #ffc107; border-radius: 4px; }
+        .guide-box h3 { margin-top: 0; color: #d84315; font-size: 16px; }
+        .guide-box ol { padding-left: 20px; margin-bottom: 0; line-height: 1.6; font-size: 14px; }
+        .guide-box li { margin-bottom: 10px; }
+        .important { color: #d32f2f; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>App Download</h1>
-    <p>Click the button below to download and install</p>
-    <a class="btn" href="https://github.com/yashwanth1224/CVIRMS-App-download/releases/download/v1.0/CvirmsMember-1.0.2.apks">Download App</a>
-    <div class="note">
-        <p><strong>Important:</strong> If prompted "Unknown source" or "Cannot install", please allow installation from this source in settings, then try again.</p>
-        <p>Users who have installed the old version: Please uninstall the old version first, then install this version.</p>
+    <div class="container">
+        <h1>App Download</h1>
+        <p>Click the button below to download and install</p>
+        
+        <!-- Replace this link if your APK version changes -->
+        <a class="btn" href="https://github.com/yashwanth1224/CIVRMS-App-download/releases/download/v1.0/CivrmsMember-1.0.2.apk">Download App</a>
+        
+        <div class="guide-box">
+            <h3>⚠️ Installation Guide (Please Read)</h3>
+            <ol>
+                <li>Click the <strong>"Download App"</strong> button above.</li>
+                <li>Once downloaded, click on the downloaded file.</li>
+                <li>If your phone says <strong>"For security reasons, your phone is not allowed to install unknown apps from this source"</strong>, click <strong>"Settings"</strong> in that popup.</li>
+                <li>Turn on the switch for <strong>"Allow from this source"</strong>.</li>
+                <li>Press the back button, and click the APK file again. The normal install screen will appear. Click <strong>"Install"</strong>.</li>
+            </ol>
+            <hr style="border: 0; border-top: 1px solid #ffcc80; margin: 15px 0;">
+            <p style="margin: 0; font-size: 14px;">
+                <span class="important">Important for old users:</span> If you have the old version installed, you must <strong>uninstall the old version first</strong> before installing this new one.
+            </p>
+        </div>
     </div>
 </body>
 </html>
